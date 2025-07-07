@@ -1,96 +1,58 @@
 # 📊 TNEA Cutoff Trend Analysis
-A deep dive into Tamil Nadu Engineering Admissions (TNEA) cutoff data, uncovering surprising trends in 7.5% Government School Reservation versus General category counseling between 2021 and 2024.
 
-🔍 Project Overview
-This repository explores the evolution of closing ranks in TNEA counseling, with a particular focus on how the 7.5% reservation for Government School students compares to the general category over the years.
+A data-driven exploration of Tamil Nadu Engineering Admissions (TNEA) cutoff trends from **2022 to 2024**, focusing on how **public perception rank** correlates with the **closing ranks** under **general counseling** and **7.5% government school reservation**.
 
-The analysis aims to answer one central question:
+> 🔍 **Main Insight:**  
+At every college, there is a tipping point where the **7.5% reservation cutoff becomes higher than the general OC cutoff** — and interestingly, this point is **climbing up** the public perception ranks **every year**.
 
-Is there a consistent point in the college ranking where the 7.5% reservation cutoffs surpass general category cutoffs? If so, is this point shifting over time?
+---
 
-Spoiler: Yes — and it’s moving up. 🎯
+## 📁 Repository Structure
 
-📁 Repository Structure
-bash
-Copy
-Edit
-TNEA-cutoff-trend-analysis/
-│
-├── 📓 preprocessing.ipynb         # Data cleaning, filtering, and shaping from raw Excel sources
-├── 📓 tnea_eda_viz.ipynb          # Exploratory Data Analysis and final visualization plots
-├── 📄 README.md                   # This file
-├── 📂 data/                       # [Optional] Source Excel sheets (not pushed to GitHub)
-📌 Dataset Description
-The analysis uses:
+- **`General_vs_7_5_Reservation_(Data_Preprocessing).ipynb`**  
+   Prepares and filters the data from multiple Excel sources. Includes:
+   - Filtering by branch (CSE)
+   - Cleaning "Not found" or missing perception ranks
+   - Structuring year-wise datasets
+   - Removing zero cutoffs or outliers
 
-📄 Cutoff data (2021–2024) for CSE branch across all TNEA-participating colleges
+- **`General_vs_7_5_Reservation_(EDA_and_Viz).ipynb`**  
+   A comprehensive visual analysis notebook. Features:
+   - Scatter plots of closing ranks vs public perception
+   - Year-wise trends for both General and 7.5% reservation categories
+   - **Linear regression fits** and **intersection points**
+   - Multi-year overlay visualizations with trendlines and annotations
 
-📄 Public perception rankings (PP Rank) for each college
+---
 
-📄 Separate cutoffs for:
+## 🧪 Steps in the Analysis
 
-🧍 General Category
+### 1. Data Collection & Preprocessing
+- Used publicly available `.xlsx` files of TNEA closing ranks.
+- Selected only **Computer Science (CS)** branches to narrow the scope.
+- Cleaned inconsistent perception rank entries and filtered out invalid records.
 
-🏫 7.5% Government School Reservation
+### 2. Year-wise Analysis
+- Compared **OC (General)** and **7.5% reservation** closing ranks for 2022, 2023, and 2024.
+- Used **Public Perception Rank (PP Rank)** as the x-axis — a proxy for college reputation.
 
-🧪 Steps of Analysis
-1. Data Preprocessing
-Extracted sheets from Excel files:
+### 3. Visualizations & Trends
+- Generated scatter plots and overlaid **linear regression lines** to model the trend for each category.
+- Calculated **intersection points** of the two trend lines for each year.
+- Found that:
+   - In early PP ranks (top colleges), general OC ranks are typically lower (i.e., more competitive).
+   - After a certain college rank, **7.5% reservation ranks surpass general ranks**.
+   - This **intersection point is moving up** in PP rank each year, showing a trend of **improving accessibility** for government school students.
 
-Average OC cutoffs (2021–2024)
+### 4. Key Insight
+> 📈 The **cutoff reversal point** (where reservation cutoffs exceed general ones) has shifted upward in college ranks every year — indicating increasing competition and stronger demand among 7.5% reservation category candidates for top colleges.
 
-Reservation cutoffs (2022–2024) for CSE
+---
 
-Cleaned missing data and removed anomalies ("Not found" values, zero cutoffs)
+## ✨ Future Work
 
-Standardized column names and filtered for 'BRANCH CODE' == 'CS'
+- Extend to other branches (ECE, MECH, etc.)
+- Compare with **community-based reservations** and **first-generation graduate schemes**.
+- Integrate admission trends with **HSC performance data**.
 
-📓 See: preprocessing.ipynb
-
-2. Exploratory Data Analysis (EDA)
-Created scatter plots of OC Closing Rank vs Public Perception Rank
-
-Compared general vs 7.5% reservation across years
-
-Applied linear regression to each category per year
-
-Identified intersection points: where reservation cutoffs overtake general cutoffs
-
-Observed a clear upward shift in crossover points over the years
-
-📓 See: tnea_eda_viz.ipynb
-
-💡 Key Insights
-Each year, there is a college PP rank where the reservation closing ranks start to become higher than general.
-
-This cutoff intersection point is moving up the perception rank scale — meaning more highly ranked colleges are seeing reservation students closing earlier.
-
-This suggests that reservation category students are opting or getting placed in better-ranked colleges year over year — a positive shift in access equity.
-
-📈 Visual Highlight
-The final visual in the notebook shows all three years (2022–2024) overlaid with regression lines and intersection points:
-
-📉 Blue dashed lines: General trend
-
-🟧 Orange dashed lines: 7.5% Reservation trend
-
-🔴 Intersection markers: Crossover points
-
-The rising trend of intersection tells a story of shifting dynamics in the TNEA landscape.
-
-🤔 Why This Matters
-Understanding these trends is critical for:
-
-Policymakers monitoring the impact of reservation policies
-
-Students and parents navigating college options
-
-Researchers and educators tracking access to higher education
-
-📌 Future Plans
-Expand analysis to other branches (ECE, MECH, etc.)
-
-Use clustering or polynomial fits to explore non-linear patterns
-
-Build an interactive dashboard for year-wise counseling simulation
-
+---
