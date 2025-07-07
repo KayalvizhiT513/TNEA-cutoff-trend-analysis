@@ -33,20 +33,20 @@ At every college, there is a tipping point where the **7.5% reservation cutoff b
 - Cleaned inconsistent perception rank entries and filtered out invalid records.
 
 ### 2. Year-wise Analysis
-- Compared **OC (General)** and **7.5% reservation** closing ranks for 2022, 2023, and 2024.
+- Compared **OC (General)** and **7.5% reservation** closing cutoff for 2022, 2023, and 2024.
 - Used **Public Perception Rank (PP Rank)** as the x-axis — a proxy for college reputation.
 
 ### 3. Visualizations & Trends
 - Generated scatter plots and overlaid **linear regression lines** to model the trend for each category.
 - Calculated **intersection points** of the two trend lines for each year.
 - Found that:
-   - In early PP ranks (top colleges), general OC ranks are typically lower (i.e., more competitive).
-   - After a certain college rank, **7.5% reservation ranks surpass general ranks**.
-   - This **intersection point is moving up** in PP rank each year, showing a trend of **improving accessibility** for government school students.
+   - In early PP ranks (top colleges), general OC cutoffs are typically higher (i.e., more competitive).
+   - After a certain college rank, **7.5% reservation cutoffs surpass general cutoffs**.
+   - This **intersection point is moving up** in PP rank each year, showing a trend of students in the 7.5% reservation category are outperforming more peers and competing closer to or beyond general category levels.
 
 ### 4. Key Insight
-> 📈 The **cutoff reversal point** (where reservation cutoffs exceed general ones) has shifted upward in college ranks every year — indicating increasing competition and stronger demand among 7.5% reservation category candidates for top colleges.
-
+> 📈 The **cutoff reversal point** (where 7.5% reservation cutoffs exceed general OC cutoffs) is **shifting upward** in public perception ranks — meaning this phenomenon is happening at **more competitive colleges each year.**
+> 🎯 This reflects **a rise in competitiveness** among government school students, who are securing admission to higher-ranked institutions, **even beyond the general counseling cutoffs** in some cases.
 ---
 
 ## ✨ Future Work
