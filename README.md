@@ -45,8 +45,8 @@ At every college, there is a tipping point where the **7.5% reservation cutoff b
    - This **intersection point is moving up** in PP rank each year, showing a trend of students in the 7.5% reservation category are outperforming more peers and competing closer to or beyond general category levels.
 
 ### 4. Key Insight
-> 📈 The **cutoff reversal point** (where 7.5% reservation cutoffs exceed general OC cutoffs) is **shifting upward** in public perception ranks — meaning this phenomenon is happening at **more competitive colleges each year.**
-> 🎯 This reflects **a rise in competitiveness** among government school students, who are securing admission to higher-ranked institutions, **even beyond the general counseling cutoffs** in some cases.
+> 📈 The **cutoff reversal point** (where 7.5% reservation cutoffs exceed general OC cutoffs) is **shifting upward** in public perception ranks — meaning this phenomenon is happening at **more competitive colleges each year.**<br>
+🎯 This reflects **a rise in competitiveness** among government school students, who are securing admission to higher-ranked institutions, **even beyond the general counseling cutoffs** in some cases.
 ---
 
 ## ✨ Future Work
